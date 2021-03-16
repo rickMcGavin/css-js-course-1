@@ -60,10 +60,6 @@ main {
   height: 50%;
 }
 
-main p {
-  display: none;
-}
-
 .max-width-wrapper {
   margin: 0 auto;
   max-width: 670px;
@@ -80,22 +76,7 @@ main p {
 .indented-heading {
   background: var(--secondary);
   border-bottom: 8px solid var(--secondaryDark);
-  /* margin-left: 0; */
+  margin-left: -40px;
   max-width: fit-content;
   padding: 24px 40px;
-}
-
-@media (min-width: 451px) {
-  .indented-heading {
-    margin-left: -24px;
-  }
-  main p {
-    display: block;
-  }
-}
-
-@media (min-width: 769px) {
-  .indented-heading {
-    margin-left: -40px;
-  }
 }
